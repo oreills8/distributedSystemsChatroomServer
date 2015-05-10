@@ -22,7 +22,7 @@ class Chatroom
       lastElement = splitLine.length - 1
       @currentMessage.message = splitLine[1..lastElement].join(' ') 
       if @currentMessage.releventInfo()    
-        totalLength = @jointClients.length
+        totalLength = @jointClients.length 
         count = 0
         while totalLength > count
           tempConnection = @jointClients[count]
